@@ -1,0 +1,113 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+nav {
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+nav a:hover {
+  color: #ddd;
+}
+
+button {
+  background: #5cb85c;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+button:hover {
+  background: #4cae4c;
+}
+
+button.delete {
+    background: #d9534f;
+}
+button.delete:hover {
+    background: #c9302c;
+}
+button.edit {
+    background: #f0ad4e;
+    margin-right: 5px;
+}
+button.edit:hover {
+    background: #ec971f;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+form input, form textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.page-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.item {
+  background: #e9e9e9;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.item h3 {
+  margin-top: 0;
+}
+.item-actions button {
+    margin-left: 10px;
+}
+
+.error-message {
+    color: red;
+    background: #ffe0e0;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    text-align: center;
+}
