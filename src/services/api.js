@@ -1,7 +1,8 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: '/api', // 基于 package.json文件的proxy配置 http://localhost:5001/api
+  // baseURL: '/api', // 基于 package.json文件的proxy配置 http://localhost:5001/api
+  baseURL: process.env.REACT_APP_API_URL, // 从环境变量读取
   headers: {
     'Content-Type': 'application/json',
   },
